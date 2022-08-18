@@ -17,8 +17,9 @@ metadata:
     name: integrations-for-accessrequest-approvals
 spec:
   enabled: true
-  url:  https://0d6e-72-216-152-176.ngrok.io/api/amplifycentralwebhookhandler
-  # url:  https://webhook.site/d00f9f5c-689f-4b67-8c9e-0b89237d78a9
+  # url:  https://0d6e-72-216-152-176.ngrok.io/api/amplifycentralwebhookhandler
+  # url:  https://subapproval.herokuapp.com/api/amplifycentralwebhookhandler
+  url:  https://webhook.site/d00f9f5c-689f-4b67-8c9e-0b89237d78a9
   headers:
       apikey: 8c88-f83b424e523c
       Content-Type: application/json

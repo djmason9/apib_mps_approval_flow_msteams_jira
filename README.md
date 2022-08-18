@@ -132,3 +132,19 @@ The API Builder flow for `/approver` is shown below:
 ![](https://i.imgur.com/7IXZCTD.png)
 
 The flows can both certainly be improved by handling errors and other HTTP response status codes better but it demonstrates an MVP for now.
+
+
+HEROKU
+``` js
+docker build -t subapproval ./
+
+heroku git:remote -a subapproval
+
+docker tag subapproval registry.heroku.com/subapproval/web
+
+heroku container:login
+
+docker push registry.heroku.com/subapproval/web
+
+heroku container:release web
+```
